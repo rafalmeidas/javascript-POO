@@ -1,4 +1,4 @@
-conta() {
+function conta() {
     let numeros = [3, 2, 11, 20, 8, 7];
 
     let novosNumeros = [];
@@ -22,10 +22,30 @@ function conta2() {
 }
 
 function somaDoisNumeros(numero1, numero2) {
-    return numero1 + numero2;                                            
+    return numero1 + numero2;
 }
 
-function spreadOperator(){
+function spreadOperator() {
     let numeros = [10, 30];
     console.log(this.somaDoisNumeros(...numeros));
+}
+
+/************************************************************/
+function exibeNoConsole(lista) {
+    lista.forEach(item => console.log(item));
+}
+
+let listaDeNomes1 = ['Flávio', 'Rogers', 'Júlia'];
+let listaDeNomes2 = ['Vieira', 'Fernanda', 'Gerson'];
+
+/*listaDeNomes1.push(...listaDeNomes2);
+exibeNoConsole(listaDeNomes1);*/
+
+//exibeNoConsole([].concat(listaDeNomes1, listaDeNomes2, "Rafael"))
+
+class ConversorXML {
+
+    static converte(objeto) {
+        // converte um objeto em XML
+    }
 }

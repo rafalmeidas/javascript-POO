@@ -4,10 +4,11 @@ class ListaNegociacoes {
     }
 
     adiciona(negociacao){
-        this._negociacoes.push(negociacao)
+        this._negociacoes.push(negociacao);
     }
 
     get negociacoes() {
-        return this._negociacoes;
+        // retornando uma cópia da minha lista, caso tentem adicionar algo não dará certo.
+        return [].concat(this._negociacoes);
     }
 }
