@@ -49,3 +49,25 @@ class ConversorXML {
         // converte um objeto em XML
     }
 }
+
+/* Reescrever o código usando uma arrow function
+numeros.reduce(function(total,num) {
+    return total * num;
+}, 1);*/
+let numeros = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121];
+numeros.reduce((total, num) => total * num, 1);
+
+function exercicioMap() {
+    let numeros = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121];
+
+    let dobra = numeros.map( num => num * 2);
+
+    let metade = numeros.map( num => num / 2);
+
+    let raiz = numeros.map(num => Math.sqrt(num));
+    console.log(dobra);
+    console.log(metade);
+    console.log(raiz);
+    
+    
+}
